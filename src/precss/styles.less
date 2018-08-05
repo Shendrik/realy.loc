@@ -21,9 +21,9 @@
 //     background-repeat: no-repeat;
 // }
 
-.debug{
-	.debug(rgba(0, 0, 0, 0.3), 1px solid #ff0);
-}
+// .debug{
+// 	.debug(rgba(0, 0, 0, 0.3), 1px solid #ff0);
+// }
 
 .visually-hidden {
     position: absolute;
@@ -86,7 +86,35 @@ display: inline;
 .product {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.959);
+    margin: 50px 0;
+    
 }
+
+
+.products {
+    .row-flex();
+    // justify-content: center;
+    text-align: center;
+    // .md(justify-content, center);
+    margin-top: 50px; 
+    
+}
+
+.products li {
+    border: #ff0 1px solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    .col();
+    .size(4);
+    .size-md(6);
+    .size-xs(12);
+    .size-xxs(24);
+    
+    
+}
+
+
 // .top-contacts {
 //     // text-align: right;
 //     // justi fy-content: flex-end;
