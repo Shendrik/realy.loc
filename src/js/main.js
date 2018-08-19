@@ -23,8 +23,10 @@
                 autoplay:true,
                 items:1,
                 dots:true,
-                autoplayTimeout:2000,
+                dotsEach:true,
+                autoplayTimeout:3000,
                 singleItem:true,
+                loop:true,
 
             });
 
@@ -32,12 +34,48 @@
             $("#slider_partners").owlCarousel({
                 
                 autoplay:true,
-                items:4,
-                nav:true,
-                autoplayTimeout:2000,
+                items:1,
+                // nav:true,
+                // dots:true,
+                autoplayTimeout:3000,
                 singleItem:true,
+                loop:true,
+                responsiveClass:true,
+                responsive:{
+                    320:{
+                        items:1
+                    },
+                    390:{
+                        items:2
+                    },
+                    720:{
+                        items:3
+                    },
+                    992:{
+                        items:4
+                    }
+                }
 
             });
+
+
+            $("#slider_reviews").owlCarousel({
+                
+                autoplay:true,
+                items:1,
+                // nav:true,
+                // dots:true,
+                autoplayTimeout:7000,
+                singleItem:true,
+                loop:true,
+               
+                
+
+            });
+
+
+
+            
 
           
         });

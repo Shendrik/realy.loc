@@ -181,6 +181,10 @@ section {
     .size-xxs(24); 
 }
 
+#slider_partners, #slider_reviews {
+    margin-top: 30px;
+}
+
 .footer-bkg {
     width: 100%;
     padding: 50px 0;
@@ -263,8 +267,8 @@ nav li a:hover{background:#2C3E50}
 nav li ul{display:none}
 nav li:hover ul{display:inline}
 nav li li{float:none}
-nav .dropdown ul{position:absolute;left:0;top:100%;background:rgb(180, 59, 59);padding:10px 0;border-bottom:3px solid #34495e}
-nav .dropdown li{white-space:nowrap}
+nav .dropdown ul{position:absolute;left:0;top:100%;background:rgb(180, 59, 59);padding:10px 0;border-bottom:3px solid #34495e;z-index: 10}
+nav .dropdown li{white-space:nowrap;z-index: 10}
 nav .dropdown li a{padding:10px 35px;font-size:13px;min-width:200px}
 nav .mega-dropdown{width:100%;position:absolute;top:100%;left:0;background:#fff;overflow:hidden;padding:20px 35px;border-bottom:3px solid #34495e}
 nav li li a{float:none;color:#333;display:block;padding:8px 10px;border-radius:3px;font-size:13px}
