@@ -111,7 +111,7 @@ display: inline;
     padding: 0 0;
 }
 
-section {
+.wrapper-padding {
     padding: 100px 0;
 }
 
@@ -328,6 +328,80 @@ nav li li a:hover{background:#333;}
 //     .size-md(2);
 //     .size-xs(2);
 // };
+
+// Страница продукта
+
+.bradcrams {
+    li {
+        float: left;
+
+        &::after {
+            content: "/";
+        }
+
+        &:last-child::after {
+            content: "";
+        }
+
+        &>a:last-child {
+           color: #1e262d; 
+        }
+    }
+}
+
+.product-img-text {
+    
+    
+        .row-flex();
+        // justify-content: center;
+
+        img {
+            .col();
+            .size(6);
+            .size-md(12)
+        }
+
+        div {
+            .col();
+            .size(18);
+            .size-md(12)
+        }
+
+}
+
+.dop-info {
+
+    ul {
+        .row-flex();
+
+        li {
+            margin-bottom: 10px;
+            .col();
+            .size(8);
+            .size-md(8);
+            .size-xs(12);
+            .size-xxs(24);
+        }
+
+    }
+    
+
+    
+}
+
+
+.work-img {
+    .row-flex();
+
+        li {
+            margin-bottom: 10px;
+            .col();
+            .size(6);
+            .size-md(8);
+            .size-xs(12);
+            .size-xxs(24); 
+        }
+}
 
 
 
